@@ -28,7 +28,7 @@ const copyTemplate = async (appDir) => {
 
 const main = async () => {
   console.log("hi");
-  console.log(__dirname);
+  //console.log(__dirname);
   /*const { appName } = await askForAppName();
   const appDir = await createAppDirectory(appName);
   await copyTemplate(appDir);*/
