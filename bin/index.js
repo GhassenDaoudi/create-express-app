@@ -27,9 +27,11 @@ const copyTemplate = async (appDir) => {
 };
 
 const main = async () => {
-  const { appName } = await askForAppName();
+  console.log("hi");
+  console.log(__dirname);
+  /*const { appName } = await askForAppName();
   const appDir = await createAppDirectory(appName);
-  await copyTemplate(appDir);
+  await copyTemplate(appDir);*/
 };
 
 main().catch((e) => {
