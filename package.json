@@ -1,5 +1,5 @@
 {
-  "name": "create-express-app",
+  "name": "@gd/create-express-app",
   "version": "1.0.0",
   "description": "creates node express project",
   "type": "module",
