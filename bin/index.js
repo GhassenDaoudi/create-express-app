@@ -30,8 +30,6 @@ const main = async () => {
   const { appName } = await askForAppName();
   const appDir = await createAppDirectory(appName);
   await copyTemplate(appDir);
-  const templateDir = path.resolve(process.cwd(), "template");
-  fs.cp(templateDir, appDir, { recursive: true });
 };
 
 main().catch((e) => {
