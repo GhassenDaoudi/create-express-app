@@ -19,11 +19,12 @@ app.enable("trust proxy");
 app.use(helmet());
 app.use(compression());
 app.use(cors());
-app.use(express.static("./public"));
 
 /** routers setup */
 const { examplesRouter } = require("./features/Example/routes");
+const staticRouter = require("./features/Static/routes");
 
+app.use("/static", staticRouter);
 app.use("/examples", examplesRouter);
 
 /** error handling */
