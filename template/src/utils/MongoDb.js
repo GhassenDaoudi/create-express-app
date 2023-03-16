@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const retry = require("async-retry");
+const Logger = require("../lib/Logger");
 const connect = (url) =>
   retry(
     async (bail, attempt) => {
@@ -11,7 +12,7 @@ const connect = (url) =>
           useCreateIndex: true,
           useFindAndModify: false,
         });
-        console.log("MongoDB Connected ...");
+        Logger.info(`connected to database`);
       } catch (err) {
         throw err;
       }
