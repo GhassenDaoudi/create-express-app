@@ -1,5 +1,5 @@
 const replaceExample = async () => {
-  return { message: "replaceExample" };
+  return {message: 'replaceExample'};
 };
 
 module.exports = replaceExample;

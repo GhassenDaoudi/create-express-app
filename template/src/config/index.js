@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 
 const config = {
   meta: {
@@ -11,4 +11,4 @@ const config = {
   },
 };
 
-module.exports = { config };
+module.exports = {config};

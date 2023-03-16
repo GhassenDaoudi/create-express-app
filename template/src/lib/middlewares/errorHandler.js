@@ -1,7 +1,7 @@
-const Logger = require("../Logger");
+const Logger = require('../Logger');
 
-const errorHandler = (error, _, res, __) => {
-  Logger.error({ message: error.message, ...error });
+const errorHandler = (error, _, res) => {
+  Logger.error({message: error.message, ...error});
   return res.status(error.status).send({
     status: error.status,
     message: error.message,

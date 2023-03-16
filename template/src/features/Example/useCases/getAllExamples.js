@@ -1,5 +1,5 @@
 const getAllExamples = async () => {
-  return { message: "getAllExamples" };
+  return {message: 'getAllExamples'};
 };
 
 module.exports = getAllExamples;

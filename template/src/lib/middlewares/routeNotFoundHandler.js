@@ -1,4 +1,4 @@
-const RouteNotFound = require("../errors/RouteNotFound");
+const RouteNotFound = require('../errors/RouteNotFound');
 
 const routeNotFoundHandler = (_, __, next) => {
   next(new RouteNotFound());

@@ -1,5 +1,5 @@
 const deleteExample = async () => {
-  return { message: "deleteExample" };
+  return {message: 'deleteExample'};
 };
 
 module.exports = deleteExample;

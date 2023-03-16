@@ -1,5 +1,5 @@
 class ServiceError extends Error {
-  constructor({ message, name, code }) {
+  constructor({message, name, code}) {
     super(message);
     this.timestamp = new Date();
     this.name = name;

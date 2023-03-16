@@ -1,5 +1,5 @@
 const getExampleById = async () => {
-  return { message: "getExampleById" };
+  return {message: 'getExampleById'};
 };
 
 module.exports = getExampleById;

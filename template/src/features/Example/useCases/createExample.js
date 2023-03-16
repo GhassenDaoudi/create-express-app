@@ -1,8 +1,7 @@
-const RouteNotFound = require("../../../lib/errors/RouteNotFound");
+const RouteNotFound = require('../../../lib/errors/RouteNotFound');
 
 const createExample = async () => {
-  throw new RouteNotFound("ll");
-  return { message: "createExample" };
+  throw new RouteNotFound('ll');
 };
 
 module.exports = createExample;

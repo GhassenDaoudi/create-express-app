@@ -1,4 +1,4 @@
-const examplesRouter = require("./examples.router");
+const examplesRouter = require('./examples.router');
 module.exports = {
   examplesRouter,
 };

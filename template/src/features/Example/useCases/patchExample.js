@@ -1,5 +1,5 @@
 const patchExample = async () => {
-  return { message: "patchExample" };
+  return {message: 'patchExample'};
 };
 
 module.exports = patchExample;
