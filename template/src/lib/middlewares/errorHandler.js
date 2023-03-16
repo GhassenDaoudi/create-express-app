@@ -1,17 +1,13 @@
-const { default: Logger } = require("../Logger");
+const Logger = require("../Logger");
 
-const errorHandler = () => (error, req, res, next) => {
+const errorHandler = (error, _, res, __) => {
   Logger.error({ message: error.message, ...error });
-  return res.status(error.status).json({
-    errors: [
-      {
-        status: error.status,
-        message: error.message,
-        name: error.name,
-        code: error.code,
-        timestamp: error.timestamp,
-      },
-    ],
+  return res.status(error.status).send({
+    status: error.status,
+    message: error.message,
+    name: error.name,
+    code: error.code,
+    timestamp: error.timestamp,
   });
 };
 
